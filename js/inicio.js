@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
             cerrarSesionBtn.addEventListener('click', function () {
                 // Cierra la sesión y redirige a la página de inicio de sesión
                 firebase.auth().signOut().then(function () {
-                    window.location.href = 'login.html';
+                    window.location.href = 'https://patinoroblerojulioashley.github.io/Evaluacion3JAPR.github.io/login.html';
                 }).catch(function (error) {
                     console.error('Error al cerrar sesión:', error);
                 });
             });
         } else {
             // Si el usuario no está autenticado, redirige al inicio de sesión
-            window.location.href = 'login.html';
+            window.location.href = 'https://patinoroblerojulioashley.github.io/Evaluacion3JAPR.github.io/login.html';
         }
     });
 });
