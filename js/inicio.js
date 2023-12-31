@@ -18,10 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if ((user.providerData[0].providerId === 'google.com' || user.providerData[0].providerId === 'facebook.com') && user.photoURL) {
                 // Si es Google o Facebook, utiliza la URL de avatar de Google o Facebook
                 avatarImg.src = user.photoURL;
-            } else {
-                // Si no hay URL de avatar disponible, puedes establecer una imagen predeterminada
-                avatarImg.src = 'ruta_a_imagen_predeterminada.jpg';
-            }
+            } 
 
             // Agrega un evento al botón de cerrar sesión
             const cerrarSesionBtn = document.getElementsByName('terminarSesión')[0];
