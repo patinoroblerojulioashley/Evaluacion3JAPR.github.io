@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.login {
+    position: relative; /* Añadido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('cerca-estudiantes-equipo-trabajo-equipo-pila-manos-juntas-inicio-concepto-exito.jpg') center/cover no-repeat;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8vh;    
+}
+
+.container img{
+    width: 35.4vh;
+    height: 35.4vh;
+}
+.container button{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 60px;
+  box-shadow: 0px 4px 4px #00000040;
+  width: 61.7vh;
+  height: 15.8vh;
+  font-weight: 700;
+  color: #000000;
+  font-size: 4.5vh;
+  letter-spacing: 0;
+  line-height: normal;
+  box-shadow: 0px 4px 4px #00000040;
+}
+.container .item2{
+    background-color: #385699;
+}
+.container .item3{
+    background-color: #e2e2e2;
+}
+.container .item2:hover{
+    background-color: #5471b1;
+    color: #252525;
+    cursor: pointer;
+}
+.container .item3:hover{
+    background-color: #D8D4D5;
+    color: #252525;
+    cursor: pointer;
+}

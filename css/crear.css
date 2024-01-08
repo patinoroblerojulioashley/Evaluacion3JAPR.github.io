@@ -1,0 +1,181 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.crear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('dylan-nolte-dUsmF-F-bJg-unsplash.jpg') center/cover no-repeat;     
+    }
+/*nav*/
+.nav{
+    display: flex;
+    flex-direction: row ;
+    width: 100%;
+    height: 15.6vh;
+    background-color: #191919;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+.nav .item1{
+  width: 15.1vh;
+  height: 15.1vh;
+  display: block;
+}
+
+.nav a.item2,
+.nav a.item3,
+.nav a.item4,
+.nav a.item5 {
+    display: block;
+    width: 100%; 
+    height: 15.6vh;
+    line-height: 15.6vh;
+    text-align: center; 
+    background-color: transparent; 
+}
+.nav a.item2:hover,
+.nav a.item3:hover,
+.nav a.item4:hover,
+.nav a.item5:hover {
+    background-color: #444242; 
+}
+
+.nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2.8vh;
+    text-decoration: none;
+    color: #ffffff;
+}
+/*Formulario*/
+.formulario{
+    width: 65.1vh; 
+    height: 89.2vh; 
+    background: #D9D9D9; 
+    box-shadow: .8vh 1.5vh 1vh rgba(0, 0, 0, 0.7); 
+    border-radius: 4.4vh;
+    padding-right: 3vh;
+    padding-left: 5vh;
+    position: static;
+    margin-top: 16vh;
+   
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: #1D7874;
+}
+.escribenos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: #191919;
+    font-size: 1.9vh;
+    text-align: justify;
+}
+.nombre, .email, .descripcion, .fecha, .opciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: #191919;
+    font-size: 1.9vh;
+    text-align: justify;
+}
+.input-nombre, .input-email, .input-opciones{
+    width: 59.1vh;
+    height: 6.1vh;
+    border-radius: 5vh;
+    border: #1D7874 .3vh solid;
+    
+}
+.input-nombre:hover,
+.input-nombre:focus,
+.input-email:hover,
+.input-email:focus,
+.input-opciones:hover,
+.input-opciones:focus{
+    
+    background-color: #7CDEDC;
+}
+.input-descripcion{
+    width: 59.1vh;
+    height: 11.2vh;
+    border-radius: 5vh;
+    border: #1D7874 .3vh solid;
+    padding-left: 2.5vh;
+    padding-top: 2vh;
+    resize: none;
+}
+.input-descripcion:hover,
+.input-descripcion:focus{
+
+    background-color: #7CDEDC;
+}
+
+
+.input-descripcion::placeholder{
+    padding: 0;
+}
+::placeholder{
+    padding: 2.5vh;
+}
+
+.content-select{
+    width: 61.1vh;
+    height: 6.1vh;
+    border-radius: 5vh;
+    border: #1D7874 .1vh solid;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+    padding-left: 2.5vh;
+    font-weight: lighter;
+	color: #7b7b7b;
+	font-size: 1.8vh;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.input-fecha:hover,
+.input-fecha:focus{
+   
+    background-color: #7CDEDC;
+}
+.input-fecha[type="date"] {
+    cursor: pointer;
+    padding-left: 2.5vh;
+    width: 59.1vh;
+    height: 6.1vh;
+    border: #1D7874 .3vh solid;
+    border-radius: 5vh;
+    color: #1D7874;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    padding-right:2.5vh ;
+  }
+  input{
+    padding-left: 2.5vh;
+  }
+ button{
+    border-radius: 3vh;
+    width: 10vh;
+    height: 4vh;
+    border: #1D7874 solid .3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+ }
+ button:hover{
+    color: #1D7874;
+    background-color: #7CDEDC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+ }

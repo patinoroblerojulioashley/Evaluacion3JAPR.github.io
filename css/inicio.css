@@ -1,0 +1,178 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 155%;
+}
+
+.inicio{
+    position: relative; /* Añadido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('grupo-voluntarios-felices-diversos.jpg') center/cover no-repeat;
+}
+/*nav*/
+.nav{
+    display: flex;
+    flex-direction: row ;
+    width: 100%;
+    height: 15.6vh;
+    background-color: #191919;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+}
+.nav .item1{
+  width: 15.1vh;
+  height: 15.1vh;
+  display: block;
+}
+
+.nav a.item2,
+.nav a.item3,
+.nav a.item4,
+.nav a.item5 {
+    display: block;
+    width: 100%; 
+    height: 15.6vh;
+    line-height: 15.6vh;
+    text-align: center; 
+    background-color: transparent; 
+}
+.nav a.item2:hover,
+.nav a.item3:hover,
+.nav a.item4:hover,
+.nav a.item5:hover {
+    background-color: #444242; 
+}
+
+.nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2.8vh;
+    text-decoration: none;
+    color: #ffffff;
+}
+/*info*/
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49.1vh;
+    height: 50.1vh;
+
+}
+.info .info-item1{
+    font-family: "Verdana-Bold", Helvetica;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 4.8vh;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 30.7vh;
+    margin-left: 25vh;
+    margin-right: 25vh;
+}
+.info .info-item2 img{
+    width: 30.7vh;
+    height: 30.7vh;
+    box-shadow: 0px 20px 20px #00000040;
+    border:solid 5px rgba(0, 0, 0, 0.404);
+    margin-left: 40vh;
+    margin-right: 40vh;
+}
+.info .info-item3,
+ .info-item4{
+    font-family: "Verdana-Bold", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 2.8vh;
+    letter-spacing: 0;
+    line-height: normal;
+    
+}
+
+.info button{
+    width: 30.7vh;
+    height: 4vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3vh;
+    letter-spacing: 0;
+    line-height: normal;
+    background-color: #D8D4D5;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px #00000040;
+    margin-left: 25vh;
+    margin-right: 25vh;
+}
+.info .info-item5:hover{
+    background-color: #f1e8ea;
+    color: #353434;
+    cursor: pointer;
+    
+}
+/*Texto*/
+.texto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191919;
+    text-align: justify;
+}
+h3{
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    font-size: 2.9vh;
+}
+p, li{
+    
+    margin-left: 20vh;
+    margin-right: 20vh;
+    font-size: 2.5vh;
+    font-weight: lighter;
+}
+p{
+    
+    padding-bottom: 2.5vh;
+}
+.rect{
+    background-color:#7CDEDC ;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+.nav2{
+    display: flex;
+    flex-direction: row ;
+    width: 100%;
+    height: 15.6vh;
+    background-color: #191919;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;  
+}
+.nav2 .nav2-item1{
+    width: 15.1vh;
+    height: 15.1vh;
+    display: block;
+}
+hr{
+    background-color: #1D7874;
+    margin-left: 20vh;
+    margin-right: 120vh;
+    height: .4vh;
+    border: none;
+    padding: 0;
+}
