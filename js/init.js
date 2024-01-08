@@ -1,3 +1,4 @@
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDNq0t5v4hDdhL1IOokARXz89gjtD1Et2E",
@@ -9,4 +10,3 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const auth=firebase.auth();
-const firestore = firebase.firestore();
