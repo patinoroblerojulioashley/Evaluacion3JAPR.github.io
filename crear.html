@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Voluntario</title>
+     
+  <!--
+    Carga el núcleo de Firebase
+    JS SDK
+  -->
+  <script
+  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
+  </script>
+<!--
+  Agrega el manejo de
+  autenticación.
+-->
+<script
+  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
+  </script>
+<!--
+  Agrega el manejo de bases de
+  datos.
+-->
+<script
+  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
+  </script>
+<!--
+  Configura la app usando la
+  información del sitio de
+  Firebase.
+-->
+<script  src="js/init.js"></script>
+<script type="module" src="js/crear.js"></script>
+<link rel="stylesheet" href="css/crear.css" />
+</head>
+<body>
+  <!--NAV-->
+  <div class="nav">
+    <a href="inicio.html">
+      <img src="imagenes/vol.jpg" class="item1" />
+    </a>
+    <a href="crear.html" class="item2">Crear Voluntario</a>
+    <a href="ver.html" class="item3">Ver Voluntarios</a>
+    <a href="modificar.html" class="item4">Modificar Voluntario</a>
+    <a href="chat.html" class="item5">Chat</a>
+  </div>
+  <div class="crear">
+  <!-- ----------------------------------- -->
+  <div class="formulario">
+    <form id="crearVoluntario">
+        <h1>Crear Voluntario</h1>
+        <p class="escribenos">Escríbenos y en breve nos pondremos en contacto contigo</p>
+        <!--Atributo 1-->
+        
+        <label for="text" class="nombre">Nombre:</label>
+        <br>
+        <p>
+            <input type="text" placeholder="Nombre" id="nombreVoluntario" required class="input-nombre">
+        </p>
+        <!--Atributo 2-->
+        <p>
+        <label for="email" class="email">Email:</label>
+        <br>
+        <input type="email" placeholder="Email" id="emailVoluntario" required class="input-email">
+        </p>
+        <!--Atributo 3-->
+        <p>
+        <label for="descripcionVoluntario" class="descripcion">Cuentanos sobre ti:</label>
+        <br>
+        <textarea id="descripcionVoluntario" rows="5" placeholder="¡Escribe aqui!" required class="input-descripcion"></textarea>
+        </p>
+        <!--Atributo 4-->
+        <p>
+        <label for="opcionesVoluntario" class="opciones">En que campo te gustaria ser voluntario:</label>
+        <div class="content-select">
+        <select id="opcionesVoluntario" name="opciones" required class="input-opciones">
+            <option value="ambiental">Cuidado Ambiental</option>
+            <option value="adMayores">Ayuda a adultos mayores</option>
+            <option value="educacion">Educacion Preescolar</option>
+            <option value="refugio">Cuidado de refugio gatos</option>
+        </select>
+      </div>
+        </p>
+        <!--Atributo 5 Date-->
+        <p>
+        <label for="date" class="fecha">Escoge la fecha en la que deseas realizar tu servicio de voluntario</label>
+        <br>
+        <input type="date" id="fechaVoluntario" required class="input-fecha">
+        </p>
+        <button id="botonAgregar">Enviar</button>
+        </form>
+      </div>
+        <script>
+            // Configura la fecha mínima y máxima 
+const fechaVoluntariadoInput = document.getElementById('fechaVoluntario');
+const hoy = new Date();
+const unAnioDespues = new Date();
+unAnioDespues.setFullYear(hoy.getFullYear() + 1);
+
+// Formatea las fechas en formato ISO (YYYY-MM-DD)
+const fechaMinima = hoy.toISOString().split('T')[0];
+const fechaMaxima = unAnioDespues.toISOString().split('T')[0];
+
+fechaVoluntariadoInput.min = fechaMinima;
+fechaVoluntariadoInput.max = fechaMaxima;
+        </script>
+</div>
+</body>
+</html>
