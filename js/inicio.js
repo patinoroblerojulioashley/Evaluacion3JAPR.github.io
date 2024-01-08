@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Actualiza el DOM con la información del usuario
             const nombreOutput = document.getElementById('nombreOutput');
             const emailOutput = document.getElementById('emailOutput');
-            const avatarImg = document.getElementById('avatar'); // Asegúrate de tener un elemento con el id 'avatar' en tu HTML
+            const avatarImg = document.getElementById('avatar'); 
 
             nombreOutput.textContent = user.displayName;
             emailOutput.textContent = user.email;
@@ -25,14 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
             cerrarSesionBtn.addEventListener('click', function () {
                 // Cierra la sesión y redirige a la página de inicio de sesión
                 firebase.auth().signOut().then(function () {
-                    window.location.href = 'https://patinoroblerojulioashley.github.io/Evaluacion3JAPR.github.io/login.html';
+                    window.location.href = 'login.html';
                 }).catch(function (error) {
                     console.error('Error al cerrar sesión:', error);
                 });
             });
         } else {
             // Si el usuario no está autenticado, redirige al inicio de sesión
-            window.location.href = 'https://patinoroblerojulioashley.github.io/Evaluacion3JAPR.github.io/login.html';
+            window.location.href = 'login.html';
         }
     });
 });
+
