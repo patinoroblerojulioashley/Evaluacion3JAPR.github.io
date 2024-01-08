@@ -6,7 +6,7 @@ GoogleBtn.addEventListener('click', e =>{
         .then(result=>{
             console.log('Logeo Google exitoso');
             // Redirige a la página de inicio
-            window.location.href = 'https://patinoroblerojulioashley.github.io/Evaluacion3JAPR.github.io/inicio.html';
+            window.location.href = 'inicio.html';
         })
         .catch(err=>{
             console.log('Logeo Google erroneo')
@@ -22,7 +22,7 @@ FacebookBtn.addEventListener('click', e =>{
         .then(result=>{
             console.log('Logeo Facebook exitoso');
             // Redirige a la página de inicio
-            window.location.href = 'https://patinoroblerojulioashley.github.io/Evaluacion3JAPR.github.io/inicio.html';
+            window.location.href = 'inicio.html';
         })
         .catch(err=>{
             console.log('Logeo Facebook erroneo')
