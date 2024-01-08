@@ -1,61 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autenticacion</title>
-          <!--
+    <!--
     Carga el núcleo de Firebase
     JS SDK
   -->
-  <script
-  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
-  </script>
-<!--
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <!--
   Agrega el manejo de
   autenticación.
 -->
-<script
-  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
-  </script>
-<!--
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <!--
   Agrega el manejo de bases de
   datos.
 -->
-<script
-  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
-  </script>
-<!--
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <!--
   Configura la app usando la
   información del sitio de
   Firebase.
 -->
-<script src="js/init.js">
-</script>
-</head>
-<body>
-    <h1>Sesión de:</h1>
-    <form name="forma">
-        <figure>
-            <img id="avatar" src=""
-              alt="Avatar">
-        </figure>
-        <p>
-        <label>Nombre 
-            <output name="Nombre"  id="nombreOutput"></output>
-        </label>
-        </p>
-        <p>
-        <label>Email 
-            <output name="Email" id="emailOutput"></output>
-        </label>
-        </p>
-            <button
-              type="button"
-              name="terminarSesión">
+    <link rel="stylesheet" href="css/inicio.css" />
+    <script src="js/init.js"></script>
+  </head>
+  <body>
+    <div class="inicio">
+      <div class="nav">
+        <a href="inicio.html">
+          <img src="imagenes/vol.jpg" class="item1" />
+        </a>
+        <a href="crear.html" class="item2">Crear Voluntario</a>
+        <a href="ver.html" class="item3">Ver Voluntarios</a>
+        <a href="modificar.html" class="item4">Modificar Voluntario</a>
+        <a href="chat.html" class="item5">Chat</a>
+      </div>
+      <div class="info">
+        <h1 class="info-item1">Sesión de:</h1>
+        <form name="forma">
+          <figure class="info-item2">
+            <img id="avatar" src="" alt="Avatar" />
+          </figure>
+          <p>
+            <label class="info-item3"
+              >Nombre:
+              <output name="Nombre" id="nombreOutput"></output>
+            </label>
+          </p>
+          <p>
+            <label class="info-item4"
+              >Email:
+              <output name="Email" id="emailOutput"></output>
+            </label>
+          </p>
+          <p>
+            <button type="button" name="terminarSesión" class="info-item5">
               Terminar Sesión
             </button>
-    </form>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="texto">
+      <h3>Acerca de nosotros</h3>
+      <hr>
+      <p>
+        Bienvenido a Voluntarios, un espacio dedicado a la colaboración y el
+        servicio comunitario. En nuestro compromiso por crear un impacto
+        positivo en el mundo, hemos desarrollado programas de voluntariado
+        enfocados en cuatro áreas fundamentales: Cuidado Ambiental, Ayuda a
+        Adultos Mayores, Educación Preescolar y Cuidado de Refugio de Gatos.
+      </p>
+      <h3>Misión</h3>
+      <hr>
+      <p>
+        En Voluntarios, nos esforzamos por inspirar el espíritu altruista y
+        fomentar la participación activa de individuos comprometidos en el
+        bienestar de nuestra sociedad y el medio ambiente. Nuestra misión es
+        construir puentes de solidaridad que conecten a personas apasionadas con
+        oportunidades significativas de voluntariado.
+      </p>
+      <div class="rect">
+      <h3>Areas de enfoque</h3>
+      <hr>
+      <ul>
+        <li>
+        <b>Cuidado Ambiental:</b>Trabajamos arduamente para preservar y restaurar
+        nuestro entorno natural. Desde limpiezas comunitarias hasta proyectos de
+        reforestación, buscamos proteger la biodiversidad y promover la
+        sostenibilidad. 
+      </li><br>
+      <li>
+        <b>Ayuda a Adultos Mayores:</b> Reconocemos la importancia de
+        apoyar a nuestros mayores. Nuestros voluntarios se involucran en
+        actividades que van desde compañía y asistencia práctica hasta programas
+        de enriquecimiento que promueven la salud mental y emocional de nuestros
+        adultos mayores.
+      </li><br>
+        <li>        
+          <b>Educación Preescolar:</b>Creemos en el poder transformador
+        de la educación desde una edad temprana. Colaboramos con centros
+        preescolares para brindar apoyo académico y emocional a niños en edad
+        temprana, cultivando un ambiente de aprendizaje positivo. Cuidado de
+      </li><br>
+        <li>
+        <b>Refugio de Gatos:</b> Nuestro compromiso con el bienestar animal se
+        materializa a través del cuidado de refugios de gatos. Proporcionamos un
+        ambiente amoroso y seguro para estos animales, fomentando la adopción
+        responsable y la conciencia sobre la importancia de proteger a nuestros
+        amigos felinos.
+      </li>
+      </ul>
+    </div>
+      <h3>Únete a nuestra causa</h3>
+      <hr>
+      <p>
+        Te invitamos a ser parte de nuestra comunidad de voluntarios. Juntos,
+        podemos marcar la diferencia y construir un futuro más compasivo y
+        sostenible. Descubre cómo puedes contribuir y ser parte de nuestro
+        movimiento en Voluntarios.
+      </p>
+    </div>
+    <div class="nav2">
+      <a href="inicio.html">
+        <img src="imagenes/vol.jpg" class="nav2-item1" />
+      </a>
+    </div>
     <script src="js/inicio.js"></script>
-</body>
+  </body>
 </html>
